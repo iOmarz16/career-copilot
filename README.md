@@ -28,7 +28,7 @@ A) Colab + Gradio                         B) n8n Form
 ```
 
 ## 🧠 Architecture
-### 1. Multi-agent research — `HakathoanProject.ipynb`
+### 1. Multi-agent research — `career_copilot.ipynb`
 Built with **CrewAI** and **Claude Haiku 4.5**, served through a **Gradio** app on Google Colab.
 
 | Agent | Role |
@@ -57,9 +57,9 @@ The report, together with the company, role and CV text, is sent to the n8n webh
 
 ## ⚙️ Setup
 **Notebook**
-1. Open `HakathoanProject.ipynb` in Google Colab.
-2. Add `ANTHROPIC_API_KEY` and `TAVILY_API_KEY` in **Colab Secrets** — never hard-code keys.
-3. Set your n8n webhook URL, then run all cells to launch the Gradio app.
+1. Open `career_copilot.ipynb` in Google Colab.
+2. Add `ANTHROPIC_API_KEY`, `TAVILY_API_KEY` and `N8N_WEBHOOK_URL` in **Colab Secrets** — never hard-code keys or URLs.
+3. Run all cells to launch the Gradio app.
 
 **n8n**
 1. Import `n8n-workflow.json` into n8n.
